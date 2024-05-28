@@ -10,7 +10,6 @@ import {
 import { TableNameEnum } from './enums/table-name.enum';
 import { LikeEntity } from './like.entity';
 import { BaseModel } from './models/base.model';
-import { RefreshTokenEntity } from './refresh-token.entity';
 import { TagEntity } from './tag.entity';
 import { UserEntity } from './user.entity';
 

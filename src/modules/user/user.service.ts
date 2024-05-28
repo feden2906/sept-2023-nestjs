@@ -1,7 +1,5 @@
-import { Inject, Injectable, Logger } from '@nestjs/common';
-import { Repository } from 'typeorm';
+import { Injectable } from '@nestjs/common';
 
-import { UserEntity } from '../../database/entities/user.entity';
 import { LoggerService } from '../logger/logger.service';
 import { UserRepository } from '../repository/services/user.repository';
 import { CreateUserReqDto } from './dto/req/create-user.req.dto';
