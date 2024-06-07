@@ -16,7 +16,7 @@ export class TagRepository extends Repository<TagEntity> {
     qb.addSelect('COUNT(article.id)', 'tag_articlesCount');
     qb.groupBy('tag.id');
     qb.orderBy('"tag_articlesCount"', 'DESC');
-    qb.take(10);
+    qb.limit(10);
 
     return await qb.getMany();
   }
